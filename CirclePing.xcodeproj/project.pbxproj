@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B40CCEF1A46CDAA0091716E /* PingUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B40CCEE1A46CDAA0091716E /* PingUI.xib */; };
+		5B40CCF11A46D8E40091716E /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40CCF01A46D8E40091716E /* PreferencesController.swift */; };
 		5B9FE6F71A467DD70045FE06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */; };
 		5B9FE6F91A4687770045FE06 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5B9FE6F81A4687770045FE06 /* dummy.txt */; };
 		5B9FE6FA1A4687840045FE06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD0577B1A4583470014541E /* Images.xcassets */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B40CCEE1A46CDAA0091716E /* PingUI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PingUI.xib; sourceTree = "<group>"; };
+		5B40CCF01A46D8E40091716E /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
 		5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5B9FE6F81A4687770045FE06 /* dummy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		5B9FE6FB1A46A38B0045FE06 /* status.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = status.pxm; sourceTree = "<group>"; };
@@ -100,7 +104,9 @@
 				5BD057791A4583470014541E /* AppDelegate.swift */,
 				5BD0577B1A4583470014541E /* Images.xcassets */,
 				5BD0579B1A4585010014541E /* PingModel.swift */,
+				5B40CCEE1A46CDAA0091716E /* PingUI.xib */,
 				5BD057961A4584800014541E /* PingView.swift */,
+				5B40CCF01A46D8E40091716E /* PreferencesController.swift */,
 				5B9FE6FE1A46A9680045FE06 /* pxm */,
 				5BD057771A4583470014541E /* Supporting Files */,
 			);
@@ -220,6 +226,7 @@
 			files = (
 				5B9FE6FA1A4687840045FE06 /* Images.xcassets in Resources */,
 				5B9FE6F91A4687770045FE06 /* dummy.txt in Resources */,
+				5B40CCEF1A46CDAA0091716E /* PingUI.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B40CCF11A46D8E40091716E /* PreferencesController.swift in Sources */,
 				5BD0579C1A4585010014541E /* PingModel.swift in Sources */,
 				5BD057971A4584800014541E /* PingView.swift in Sources */,
 				5BD057951A4583A20014541E /* main.swift in Sources */,

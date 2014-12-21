@@ -20,6 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
+        pingModel.stop()
         println("terminate")
     }
 
