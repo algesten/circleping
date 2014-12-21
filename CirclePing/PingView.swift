@@ -53,7 +53,11 @@ public class PingView : NSObject, PingModelDelegate, NSMenuDelegate {
         assert(bracket >= 0, "bracket < 0!")
         assert(bracket <= 5, "bracket > 5!")
 //        println("update \(packetLoss) \(roundTrip) \(bracket)")
-        statusItem.image = images[5 - bracket]
+        let cur = statusItem.image
+        let next = images[5 - bracket]
+        if cur != next {
+            statusItem.image = next
+        }
     }
 
     deinit {
