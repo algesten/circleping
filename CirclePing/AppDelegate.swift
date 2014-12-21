@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         println("launch")
         pingModel.delegate = pingView;
-        pingModel.host = "130.240.19.2"
+        pingModel.host = "8.8.8.8"
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

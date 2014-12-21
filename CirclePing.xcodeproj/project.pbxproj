@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5B9FE6F71A467DD70045FE06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */; };
+		5B9FE6F91A4687770045FE06 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5B9FE6F81A4687770045FE06 /* dummy.txt */; };
+		5B9FE6FA1A4687840045FE06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD0577B1A4583470014541E /* Images.xcassets */; };
 		5BD0577A1A4583470014541E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD057791A4583470014541E /* AppDelegate.swift */; };
 		5BD0578B1A4583470014541E /* CirclePingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0578A1A4583470014541E /* CirclePingTests.swift */; };
 		5BD057951A4583A20014541E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD057941A4583A20014541E /* main.swift */; };
@@ -28,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5B9FE6F81A4687770045FE06 /* dummy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
+		5B9FE6FB1A46A38B0045FE06 /* status.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = status.pxm; sourceTree = "<group>"; };
+		5B9FE6FC1A46A95D0045FE06 /* icon.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.pxm; sourceTree = "<group>"; };
 		5BD057741A4583470014541E /* CirclePing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirclePing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD057781A4583470014541E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD057791A4583470014541E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B9FE6FE1A46A9680045FE06 /* pxm */ = {
+			isa = PBXGroup;
+			children = (
+				5B9FE6FC1A46A95D0045FE06 /* icon.pxm */,
+				5B9FE6FB1A46A38B0045FE06 /* status.pxm */,
+			);
+			name = pxm;
+			sourceTree = "<group>";
+		};
 		5BD0576B1A4583470014541E = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,7 @@
 				5BD0577B1A4583470014541E /* Images.xcassets */,
 				5BD0579B1A4585010014541E /* PingModel.swift */,
 				5BD057961A4584800014541E /* PingView.swift */,
+				5B9FE6FE1A46A9680045FE06 /* pxm */,
 				5BD057771A4583470014541E /* Supporting Files */,
 			);
 			path = CirclePing;
@@ -101,6 +116,7 @@
 				5BD057A81A4587570014541E /* Bridging-Header.h */,
 				5BD057941A4583A20014541E /* main.swift */,
 				5BD057781A4583470014541E /* Info.plist */,
+				5B9FE6F81A4687770045FE06 /* dummy.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,6 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9FE6FA1A4687840045FE06 /* Images.xcassets in Resources */,
+				5B9FE6F91A4687770045FE06 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
