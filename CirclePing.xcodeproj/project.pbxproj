@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B9FE6F71A467DD70045FE06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */; };
 		5BD0577A1A4583470014541E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD057791A4583470014541E /* AppDelegate.swift */; };
 		5BD0578B1A4583470014541E /* CirclePingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0578A1A4583470014541E /* CirclePingTests.swift */; };
 		5BD057951A4583A20014541E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD057941A4583A20014541E /* main.swift */; };
+		5BD057971A4584800014541E /* PingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD057961A4584800014541E /* PingView.swift */; };
+		5BD0579A1A4584D80014541E /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD057991A4584D80014541E /* SimplePing.m */; };
+		5BD0579C1A4585010014541E /* PingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0579B1A4585010014541E /* PingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5BD057741A4583470014541E /* CirclePing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirclePing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD057781A4583470014541E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD057791A4583470014541E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,11 @@
 		5BD057891A4583470014541E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD0578A1A4583470014541E /* CirclePingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePingTests.swift; sourceTree = "<group>"; };
 		5BD057941A4583A20014541E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5BD057961A4584800014541E /* PingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingView.swift; sourceTree = "<group>"; };
+		5BD057981A4584D80014541E /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		5BD057991A4584D80014541E /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		5BD0579B1A4585010014541E /* PingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingModel.swift; sourceTree = "<group>"; };
+		5BD057A81A4587570014541E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9FE6F71A467DD70045FE06 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +65,7 @@
 		5BD0576B1A4583470014541E = {
 			isa = PBXGroup;
 			children = (
+				5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */,
 				5BD057761A4583470014541E /* CirclePing */,
 				5BD057871A4583470014541E /* CirclePingTests */,
 				5BD057751A4583470014541E /* Products */,
@@ -74,7 +86,9 @@
 			children = (
 				5BD057791A4583470014541E /* AppDelegate.swift */,
 				5BD0577B1A4583470014541E /* Images.xcassets */,
+				5BD057961A4584800014541E /* PingView.swift */,
 				5BD057771A4583470014541E /* Supporting Files */,
+				5BD0579B1A4585010014541E /* PingModel.swift */,
 			);
 			path = CirclePing;
 			sourceTree = "<group>";
@@ -82,6 +96,9 @@
 		5BD057771A4583470014541E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5BD057981A4584D80014541E /* SimplePing.h */,
+				5BD057991A4584D80014541E /* SimplePing.m */,
+				5BD057A81A4587570014541E /* Bridging-Header.h */,
 				5BD057941A4583A20014541E /* main.swift */,
 				5BD057781A4583470014541E /* Info.plist */,
 			);
@@ -202,8 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD0579C1A4585010014541E /* PingModel.swift in Sources */,
+				5BD057971A4584800014541E /* PingView.swift in Sources */,
 				5BD057951A4583A20014541E /* main.swift in Sources */,
 				5BD0577A1A4583470014541E /* AppDelegate.swift in Sources */,
+				5BD0579A1A4584D80014541E /* SimplePing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +331,7 @@
 				INFOPLIST_FILE = CirclePing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CirclePing/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -322,6 +343,7 @@
 				INFOPLIST_FILE = CirclePing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CirclePing/Bridging-Header.h";
 			};
 			name = Release;
 		};

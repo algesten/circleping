@@ -10,19 +10,17 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var statusItem:NSStatusItem?;
+    let pingModel = PingModel()
+    let pingView = PingView()
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        println("launch");
-        statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1);
+        println("launch")
+        pingModel.delegate = pingView;
+        pingModel.host = "130.240.19.2"
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        if (statusItem != nil) {
-            NSStatusBar.systemStatusBar().removeStatusItem(statusItem!);
-        }
-        statusItem = nil;
-        println("terminate");
+        println("terminate")
     }
 
 
