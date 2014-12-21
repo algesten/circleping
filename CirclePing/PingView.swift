@@ -11,6 +11,7 @@ import Cocoa
 
 public class PingView : NSObject, PingModelDelegate, NSMenuDelegate {
  
+    let prefs = PreferencesController()
     var statusItem:NSStatusItem
     var images:[NSImage]
     var menu:NSMenu
@@ -38,7 +39,9 @@ public class PingView : NSObject, PingModelDelegate, NSMenuDelegate {
         let tag = sender.tag
         if tag == 1 {
             // preferences
-            
+            let window = statusItem.valueForKey("window")! as NSWindow
+            let scr = window.frame
+            prefs.show(scr.origin)
         } else if tag == 2 {
             // quit
             NSApplication.sharedApplication().terminate(self)

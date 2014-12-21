@@ -24,6 +24,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         println("terminate")
     }
 
+    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+        return false
+    }
 
 }
 
