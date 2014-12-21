@@ -65,7 +65,6 @@
 		5BD0576B1A4583470014541E = {
 			isa = PBXGroup;
 			children = (
-				5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */,
 				5BD057761A4583470014541E /* CirclePing */,
 				5BD057871A4583470014541E /* CirclePingTests */,
 				5BD057751A4583470014541E /* Products */,
@@ -86,9 +85,9 @@
 			children = (
 				5BD057791A4583470014541E /* AppDelegate.swift */,
 				5BD0577B1A4583470014541E /* Images.xcassets */,
+				5BD0579B1A4585010014541E /* PingModel.swift */,
 				5BD057961A4584800014541E /* PingView.swift */,
 				5BD057771A4583470014541E /* Supporting Files */,
-				5BD0579B1A4585010014541E /* PingModel.swift */,
 			);
 			path = CirclePing;
 			sourceTree = "<group>";
@@ -96,6 +95,7 @@
 		5BD057771A4583470014541E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */,
 				5BD057981A4584D80014541E /* SimplePing.h */,
 				5BD057991A4584D80014541E /* SimplePing.m */,
 				5BD057A81A4587570014541E /* Bridging-Header.h */,
