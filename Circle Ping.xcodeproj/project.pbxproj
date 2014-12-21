@@ -37,11 +37,11 @@
 		5B9FE6F81A4687770045FE06 /* dummy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		5B9FE6FB1A46A38B0045FE06 /* status.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = status.pxm; sourceTree = "<group>"; };
 		5B9FE6FC1A46A95D0045FE06 /* icon.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.pxm; sourceTree = "<group>"; };
-		5BD057741A4583470014541E /* CirclePing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirclePing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD057741A4583470014541E /* Circle Ping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circle Ping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD057781A4583470014541E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD057791A4583470014541E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD0577B1A4583470014541E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5BD057841A4583470014541E /* CirclePingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CirclePingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD057841A4583470014541E /* Circle PingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Circle PingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD057891A4583470014541E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD0578A1A4583470014541E /* CirclePingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePingTests.swift; sourceTree = "<group>"; };
 		5BD057941A4583A20014541E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		5BD057751A4583470014541E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5BD057741A4583470014541E /* CirclePing.app */,
-				5BD057841A4583470014541E /* CirclePingTests.xctest */,
+				5BD057741A4583470014541E /* Circle Ping.app */,
+				5BD057841A4583470014541E /* Circle PingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5BD057731A4583470014541E /* CirclePing */ = {
+		5BD057731A4583470014541E /* Circle Ping */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BD0578E1A4583470014541E /* Build configuration list for PBXNativeTarget "CirclePing" */;
+			buildConfigurationList = 5BD0578E1A4583470014541E /* Build configuration list for PBXNativeTarget "Circle Ping" */;
 			buildPhases = (
 				5BD057701A4583470014541E /* Sources */,
 				5BD057711A4583470014541E /* Frameworks */,
@@ -159,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = CirclePing;
+			name = "Circle Ping";
 			productName = CirclePing;
-			productReference = 5BD057741A4583470014541E /* CirclePing.app */;
+			productReference = 5BD057741A4583470014541E /* Circle Ping.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5BD057831A4583470014541E /* CirclePingTests */ = {
+		5BD057831A4583470014541E /* Circle PingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BD057911A4583470014541E /* Build configuration list for PBXNativeTarget "CirclePingTests" */;
+			buildConfigurationList = 5BD057911A4583470014541E /* Build configuration list for PBXNativeTarget "Circle PingTests" */;
 			buildPhases = (
 				5BD057801A4583470014541E /* Sources */,
 				5BD057811A4583470014541E /* Frameworks */,
@@ -177,9 +177,9 @@
 			dependencies = (
 				5BD057861A4583470014541E /* PBXTargetDependency */,
 			);
-			name = CirclePingTests;
+			name = "Circle PingTests";
 			productName = CirclePingTests;
-			productReference = 5BD057841A4583470014541E /* CirclePingTests.xctest */;
+			productReference = 5BD057841A4583470014541E /* Circle PingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5BD0576F1A4583470014541E /* Build configuration list for PBXProject "CirclePing" */;
+			buildConfigurationList = 5BD0576F1A4583470014541E /* Build configuration list for PBXProject "Circle Ping" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,8 +213,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BD057731A4583470014541E /* CirclePing */,
-				5BD057831A4583470014541E /* CirclePingTests */,
+				5BD057731A4583470014541E /* Circle Ping */,
+				5BD057831A4583470014541E /* Circle PingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +266,7 @@
 /* Begin PBXTargetDependency section */
 		5BD057861A4583470014541E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5BD057731A4583470014541E /* CirclePing */;
+			target = 5BD057731A4583470014541E /* Circle Ping */;
 			targetProxy = 5BD057851A4583470014541E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -356,7 +356,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CirclePing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Circle Ping";
 				SWIFT_OBJC_BRIDGING_HEADER = "CirclePing/Bridging-Header.h";
 			};
 			name = Debug;
@@ -368,7 +368,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CirclePing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Circle Ping";
 				SWIFT_OBJC_BRIDGING_HEADER = "CirclePing/Bridging-Header.h";
 			};
 			name = Release;
@@ -388,8 +388,8 @@
 				);
 				INFOPLIST_FILE = CirclePingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CirclePing.app/Contents/MacOS/CirclePing";
+				PRODUCT_NAME = "Circle PingTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Circle Ping.app/Contents/MacOS/Circle Ping";
 			};
 			name = Debug;
 		};
@@ -404,15 +404,15 @@
 				);
 				INFOPLIST_FILE = CirclePingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CirclePing.app/Contents/MacOS/CirclePing";
+				PRODUCT_NAME = "Circle PingTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Circle Ping.app/Contents/MacOS/Circle Ping";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5BD0576F1A4583470014541E /* Build configuration list for PBXProject "CirclePing" */ = {
+		5BD0576F1A4583470014541E /* Build configuration list for PBXProject "Circle Ping" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BD0578C1A4583470014541E /* Debug */,
@@ -421,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BD0578E1A4583470014541E /* Build configuration list for PBXNativeTarget "CirclePing" */ = {
+		5BD0578E1A4583470014541E /* Build configuration list for PBXNativeTarget "Circle Ping" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BD0578F1A4583470014541E /* Debug */,
@@ -430,7 +430,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BD057911A4583470014541E /* Build configuration list for PBXNativeTarget "CirclePingTests" */ = {
+		5BD057911A4583470014541E /* Build configuration list for PBXNativeTarget "Circle PingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BD057921A4583470014541E /* Debug */,
