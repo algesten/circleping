@@ -9,7 +9,8 @@
 import Foundation
 
 // size of array
-let SIZE = 20 + (3 + 1) // 3 for measure 3 behind and 1 current
+let SCHLEPP = 1
+let SIZE = 12 + (SCHLEPP + 1) // 1 current
 
 let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
 
@@ -49,8 +50,8 @@ public class PingModel : NSObject, SimplePingDelegate {
             responses[i] = now
             // do ping
             pinger!.sendPingWithData(nil)
-            // measure 3 seconds behind current sequence
-            let head = (seq - 3) % SIZE
+            // measure SCHLEPP seconds behind current sequence
+            let head = (seq - SCHLEPP) % SIZE
             let tail = (seq - SIZE + 1) % SIZE
             measure(head, tail:tail)
         } else {
