@@ -554,7 +554,7 @@ static void HostResolveCallback(CFHostRef theHost, CFHostInfoType typeInfo, cons
 {
     SimplePing *    obj;
 
-    NSLog(@">HostResolveCallback");
+    //NSLog(@">HostResolveCallback");
     
     obj = (__bridge SimplePing *) info;
     assert([obj isKindOfClass:[SimplePing class]]);
@@ -593,9 +593,9 @@ static void HostResolveCallback(CFHostRef theHost, CFHostInfoType typeInfo, cons
         
         CFHostScheduleWithRunLoop(self->_host, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
         
-        NSLog(@">CFHostStartInfoResolution");
+        //NSLog(@">CFHostStartInfoResolution");
         success = CFHostStartInfoResolution(self->_host, kCFHostAddresses, &streamError);
-        NSLog(@"<CFHostStartInfoResolution");
+        //NSLog(@"<CFHostStartInfoResolution");
         if ( ! success ) {
             [self didFailWithHostStreamError:streamError];
         }

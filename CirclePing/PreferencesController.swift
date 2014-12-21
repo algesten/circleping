@@ -12,9 +12,10 @@ import Cocoa
 let WIDTH  = 400.0
 let HEIGHT = 130.0
 
-public class PreferencesController : NSViewController, NSWindowDelegate {
+public class PreferencesController : NSViewController, NSWindowDelegate, NSTextFieldDelegate {
     
     var win:NSWindow?
+    @IBOutlet weak var host:NSTextField?
     
     public required init?(coder: NSCoder) {
         fatalError("not implemented")
@@ -49,6 +50,22 @@ public class PreferencesController : NSViewController, NSWindowDelegate {
             win = nil
             // ensure window releases
             locWin.close()
+        }
+    }
+    
+    public override func viewWillAppear() {
+        let defs = NSUserDefaults.standardUserDefaults()
+        let hostVal = defs.stringForKey("host")
+        host!.stringValue = hostVal!
+    }
+    
+    public override func controlTextDidChange(obj: NSNotification) {
+        let defs = NSUserDefaults.standardUserDefaults()
+        let hostVal = host!.stringValue.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        if !hostVal.isEmpty {
+            defs.setValue(hostVal, forKey: "host")
+            defs.synchronize()
+            PingModel.sharedInstance.host = hostVal
         }
     }
     

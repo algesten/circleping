@@ -18,7 +18,14 @@ public protocol PingModelDelegate {
     func updatePing(packetLoss:Double, roundTrip:Double)
 }
 
+// singleton
+private let _pingModelInstance = PingModel()
+
 public class PingModel : NSObject, SimplePingDelegate {
+    
+    class var sharedInstance: PingModel {
+        return _pingModelInstance
+    }
     
     public var host:String? {
         didSet {
@@ -29,13 +36,19 @@ public class PingModel : NSObject, SimplePingDelegate {
     
     var timer:dispatch_source_t?
     var pinger:SimplePing?
-    var responses = [Int](count:SIZE, repeatedValue:1)
+    var responses = [Int](count:SIZE, repeatedValue:0)
     var packetLoss:Double = 0.0
     var roundTrip:Double = 0.0  // in millis
     
     func initPinger() {
         // stop previous pinger
         stop()
+        // reset measurements
+        packetLoss = 0.0
+        roundTrip = 0.0
+        for i in 0..<responses.count {
+            responses[i] = 0
+        }
         pinger = SimplePing(hostName:host)
         pinger!.delegate = self
         pinger!.start()
@@ -157,7 +170,9 @@ public class PingModel : NSObject, SimplePingDelegate {
         let i:Int = Int(seq) % SIZE
         // microseconds
         let now = Int(CACurrentMediaTime() * 1000000)
-        responses[i] = now - responses[i]
+        if responses[i] > 0 {
+            responses[i] = now - responses[i]
+        }
         // println("did receive response \(responses[i])")
     }
     public func simplePing(pinger: SimplePing!, didReceiveUnexpectedPacket packet: NSData!) {

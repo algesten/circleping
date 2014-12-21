@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PreferencesController" customModule="CirclePing" customModuleProvider="target">
             <connections>
+                <outlet property="host" destination="oEH-Bt-UNS" id="rKk-Lx-Vcs"/>
                 <outlet property="view" destination="4QD-Eq-xeR" id="mbK-c5-R6o"/>
             </connections>
         </customObject>
@@ -33,6 +34,9 @@
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="7Ah-IK-33t"/>
+                    </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9C-XP-R3f">
                     <rect key="frame" x="18" y="93" width="66" height="17"/>

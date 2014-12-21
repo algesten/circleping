@@ -10,17 +10,22 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    let pingModel = PingModel()
     let pingView = PingView()
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         println("launch")
-        pingModel.delegate = pingView;
-        pingModel.host = "8.8.8.8"
+        PingModel.sharedInstance.delegate = pingView;
+        let defs = NSUserDefaults.standardUserDefaults()
+        var host = defs.stringForKey("host")
+        if host == nil {
+            host = "8.8.8.8"
+            defs.setValue(host, forKey: "host")
+        }
+        PingModel.sharedInstance.host = host!
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        pingModel.stop()
+        PingModel.sharedInstance.stop()
         println("terminate")
     }
 
