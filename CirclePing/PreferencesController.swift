@@ -13,10 +13,10 @@ let WIDTH  = 400.0
 let HEIGHT = 130.0
 
 public class PreferencesController : NSViewController, NSWindowDelegate, NSTextFieldDelegate {
-    
+
     var win:NSWindow?
     @IBOutlet weak var host:NSTextField?
-    
+
     public required init?(coder: NSCoder) {
         fatalError("not implemented")
     }
@@ -26,7 +26,7 @@ public class PreferencesController : NSViewController, NSWindowDelegate, NSTextF
     convenience override init() {
         self.init(nibName: "PingUI", bundle: nil)
     }
-    
+
     public func show(orig:CGPoint) {
         if win == nil {
             let x = Double(orig.x) - WIDTH / 2
@@ -36,7 +36,7 @@ public class PreferencesController : NSViewController, NSWindowDelegate, NSTextF
             win!.delegate = self
             // not release directly since that crashes
             win!.releasedWhenClosed = false
-            win!.title = "Circle Ping"
+            win!.title = "CirclePing"
             win!.contentView = self.view
             self.view.frame = NSRect(x:0,y:0,width:WIDTH,height:HEIGHT)
         }
@@ -52,13 +52,13 @@ public class PreferencesController : NSViewController, NSWindowDelegate, NSTextF
             locWin.close()
         }
     }
-    
+
     public override func viewWillAppear() {
         let defs = NSUserDefaults.standardUserDefaults()
         let hostVal = defs.stringForKey("host")
         host!.stringValue = hostVal!
     }
-    
+
     public override func controlTextDidChange(obj: NSNotification) {
         let defs = NSUserDefaults.standardUserDefaults()
         let hostVal = host!.stringValue.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
@@ -68,5 +68,5 @@ public class PreferencesController : NSViewController, NSWindowDelegate, NSTextF
             PingModel.sharedInstance.host = hostVal
         }
     }
-    
+
 }
