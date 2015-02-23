@@ -157,6 +157,7 @@ public class PingModel : NSObject, SimplePingDelegate {
     }
     public func simplePing(pinger: SimplePing!, didFailWithError error: NSError!) {
         println("fail")
+        println(error)
     }
     public func simplePing(pinger: SimplePing!, didFailToSendPacket packet: NSData!, error: NSError!) {
         // disconnecting the network comes here

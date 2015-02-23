@@ -33,6 +33,7 @@
 /* Begin PBXFileReference section */
 		5B40CCEE1A46CDAA0091716E /* PingUI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PingUI.xib; sourceTree = "<group>"; };
 		5B40CCF01A46D8E40091716E /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
+		5B7061241A9B650000607B28 /* CirclePing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CirclePing.entitlements; sourceTree = "<group>"; };
 		5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5B9FE6F81A4687770045FE06 /* dummy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		5B9FE6FB1A46A38B0045FE06 /* status.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = status.pxm; sourceTree = "<group>"; };
@@ -116,13 +117,14 @@
 		5BD057771A4583470014541E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5BD057A81A4587570014541E /* Bridging-Header.h */,
+				5B7061241A9B650000607B28 /* CirclePing.entitlements */,
+				5B9FE6F81A4687770045FE06 /* dummy.txt */,
+				5BD057781A4583470014541E /* Info.plist */,
+				5BD057941A4583A20014541E /* main.swift */,
 				5B9FE6F61A467DD70045FE06 /* QuartzCore.framework */,
 				5BD057981A4584D80014541E /* SimplePing.h */,
 				5BD057991A4584D80014541E /* SimplePing.m */,
-				5BD057A81A4587570014541E /* Bridging-Header.h */,
-				5BD057941A4583A20014541E /* main.swift */,
-				5BD057781A4583470014541E /* Info.plist */,
-				5B9FE6F81A4687770045FE06 /* dummy.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,6 +195,12 @@
 				TargetAttributes = {
 					5BD057731A4583470014541E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = PR9UFR8F34;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					5BD057831A4583470014541E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -353,6 +361,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CirclePing/CirclePing.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CirclePing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -365,6 +375,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CirclePing/CirclePing.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CirclePing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
