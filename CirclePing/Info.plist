@@ -26,12 +26,12 @@
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
-	<key>LSUIElement</key>
-	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 Repsio Ltd. All rights reserved.</string>
+	<string>Copyright © 2015 Repsio Ltd. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string></string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
