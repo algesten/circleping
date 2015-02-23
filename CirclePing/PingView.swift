@@ -23,7 +23,7 @@ public class PingView : NSObject, PingModelDelegate, NSMenuDelegate {
         menu = filter(arr as [AnyObject]) { $0 is NSMenu }[0] as NSMenu
         statusItem.menu = menu
         images = [NSImage]()
-        for i in 0...5 {
+        for i in 0...4 {
             let img = NSImage(named:"status\(i)")!
             img.setTemplate(true)
             images.append(img)
@@ -49,12 +49,12 @@ public class PingView : NSObject, PingModelDelegate, NSMenuDelegate {
     }
     
     public func updatePing(packetLoss:Double, roundTrip:Double) {
-        let bracket = Int(ceil(packetLoss/0.2))
+        let bracket = Int(ceil(packetLoss/0.25))
         assert(bracket >= 0, "bracket < 0!")
-        assert(bracket <= 5, "bracket > 5!")
+        assert(bracket <= 4, "bracket > 4!")
 //        println("update \(packetLoss) \(roundTrip) \(bracket)")
         let cur = statusItem.image
-        let next = images[5 - bracket]
+        let next = images[4 - bracket]
         if cur != next {
             statusItem.image = next
         }
